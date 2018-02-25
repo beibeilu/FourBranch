@@ -12,6 +12,10 @@
 		13E3393320427AB300F288DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E3393120427AB300F288DC /* Main.storyboard */; };
 		13E3393520427AB300F288DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13E3393420427AB300F288DC /* Assets.xcassets */; };
 		13E3393820427AB300F288DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E3393620427AB300F288DC /* LaunchScreen.storyboard */; };
+		13E3394020427B0800F288DC /* TaiJi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3393F20427B0800F288DC /* TaiJi.swift */; };
+		13E3394220427CA900F288DC /* TianGanDiZhi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3394120427CA900F288DC /* TianGanDiZhi.swift */; };
+		13E3394420427DA000F288DC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E3394320427DA000F288DC /* Helper.swift */; };
+		13E339462042867E00F288DC /* BaZi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E339452042867E00F288DC /* BaZi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		13E3393420427AB300F288DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13E3393720427AB300F288DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13E3393920427AB300F288DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13E3393F20427B0800F288DC /* TaiJi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaiJi.swift; sourceTree = "<group>"; };
+		13E3394120427CA900F288DC /* TianGanDiZhi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TianGanDiZhi.swift; sourceTree = "<group>"; };
+		13E3394320427DA000F288DC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		13E339452042867E00F288DC /* BaZi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaZi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				13E3393420427AB300F288DC /* Assets.xcassets */,
 				13E3393620427AB300F288DC /* LaunchScreen.storyboard */,
 				13E3393920427AB300F288DC /* Info.plist */,
+				13E3393F20427B0800F288DC /* TaiJi.swift */,
+				13E339452042867E00F288DC /* BaZi.swift */,
+				13E3394320427DA000F288DC /* Helper.swift */,
+				13E3394120427CA900F288DC /* TianGanDiZhi.swift */,
 			);
 			path = FourBranch;
 			sourceTree = "<group>";
@@ -136,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E3394020427B0800F288DC /* TaiJi.swift in Sources */,
 				13E3393020427AB200F288DC /* ViewController.swift in Sources */,
+				13E3394420427DA000F288DC /* Helper.swift in Sources */,
 				13E3392E20427AB200F288DC /* AppDelegate.swift in Sources */,
+				13E3394220427CA900F288DC /* TianGanDiZhi.swift in Sources */,
+				13E339462042867E00F288DC /* BaZi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
