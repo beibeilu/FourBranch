@@ -168,6 +168,7 @@ public enum TwelveGong: Int, CustomStringConvertible {
 
 // MARK:  十神
 public enum TenGod: Int, CustomStringConvertible {
+
 //    case BiJian = 1
 //    case JieCai = -1
 //    case ShiShen = 2
@@ -179,7 +180,7 @@ public enum TenGod: Int, CustomStringConvertible {
 //    case ZhengYin = 5
 //    case PianYin = -5
 //
-//
+
     case BiJian = 0
     case JieCai = 1
     case ShiShen = 2
@@ -190,6 +191,18 @@ public enum TenGod: Int, CustomStringConvertible {
     case QiSha = 6
     case ZhengYin = 9
     case PianYin = 8
+//
+//    case BiJian = 1
+//    case JieCai = -1
+//    case ShiShen = 2
+//    case ShangGuan = -2
+//    case ZhengCai = 3
+//    case PianCai = -3
+//    case ZhengGuan = 4
+//    case QiSha = -4
+//    case ZhengYin = 5
+//    case PianYin = -5
+
     
     public var description: String {
         switch self {

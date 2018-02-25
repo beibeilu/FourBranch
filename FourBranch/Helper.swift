@@ -14,6 +14,7 @@ public class Helper {
         switch tianGan {
         case .Jia:
             index = (diZhi.rawValue + 1) % 12
+
             break
         case .Bing, .Wu:
             index = (diZhi.rawValue + 10) % 12
@@ -102,6 +103,7 @@ public class Helper {
             }
         }
         return TenGod(rawValue: index)!
+        
     }
 }
 

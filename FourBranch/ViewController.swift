@@ -18,10 +18,15 @@ class ViewController: UIViewController {
         
         
         
+
         let helper = Helper()
         self.test.text = helper.getTenGod(firstTG: .Jia, secondTG: .Ding).description
 
+
         
+        
+        
+
         
     }
 
