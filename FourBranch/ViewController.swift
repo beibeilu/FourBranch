@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var test: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -17,9 +18,9 @@ class ViewController: UIViewController {
         
         
         
-        
-        
-        
+        let helper = Helper()
+        self.test.text = helper.getTenGod(firstTG: .Jia, secondTG: .Ding).description
+
         
         
     }
