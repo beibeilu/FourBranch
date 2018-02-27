@@ -46,7 +46,7 @@ public enum Gan: Int, CustomStringConvertible {
     }
 }
 
-// MARK:  地支
+// MARK: 地支
 public enum Zhi: Int, CustomStringConvertible  {
     case Zi = 0, Chou, Yin, Mao, Chen, Si, Wu, Wei, Shen, You, Xu, Hai
     static let allValue = [Zi, Chou, Yin, Mao, Chen, Si, Wu, Wei, Shen, You, Xu, Hai]
@@ -105,9 +105,10 @@ public enum Zhi: Int, CustomStringConvertible  {
     }
 }
 
-// MARK:  五行
+// MARK:  五行: 木-火-土-金-水
 public enum Element: Int, CustomStringConvertible {
-    case Jin = 0, Mu, Shui, Huo, Tu
+    // 木-火-土-金-水
+    case Mu = 0, Huo, Tu, Jin, Shui
     
     public var description: String {
         switch self {
@@ -128,6 +129,48 @@ public enum Element: Int, CustomStringConvertible {
         case .Tu:       return UIColor.brown
         }
     }
+}
+
+// MARK:  旺，相，休，囚，死
+public enum ElementStatus: Int, CustomStringConvertible {
+    case Wang = 0, Xiang, Xiu, Qiu, Si
+    
+    public var description: String {
+        switch self {
+        case .Wang:     return "旺"
+        case .Xiang:    return "相"
+        case .Xiu:      return "休"
+        case .Qiu:      return "囚"
+        case .Si:       return "死"
+        }
+    }
+}
+
+// MARK:  四时: 春-夏-四季-秋-冬
+public enum Season: Int, CustomStringConvertible {
+    // 春-夏-四季-秋-冬
+    case Chun = 0, Xia, SiJi, Qiu, Dong
+    
+    public var description: String {
+        switch self {
+        case .Chun:     return "春"
+        case .Xia:      return "夏"
+        case .Qiu:      return "秋"
+        case .Dong:     return "冬"
+        case .SiJi:     return "四季"
+        }
+    }
+        
+    var Color: UIColor {
+        switch self {
+        case .Chun:     return UIColor.green
+        case .Xia:      return UIColor.red
+        case .Qiu:      return UIColor.orange
+        case .Dong:     return UIColor.blue
+        case .SiJi:     return UIColor.brown
+        }
+    }
+        
 }
 
 // MARK:  阴阳
@@ -220,8 +263,9 @@ public enum TenGod: Int, CustomStringConvertible {
     }
 }
 
-// MARK: Class
 
+
+// MARK: Class
 public class TianGan {
     var tianGan: Gan
     init(tianGan: Gan) {
